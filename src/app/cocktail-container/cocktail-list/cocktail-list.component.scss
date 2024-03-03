@@ -1,0 +1,9 @@
+.btn-delete {
+  color: red;
+  &:hover {
+    color: rgba(255, 0, 0, 0.464);
+  }
+  border: 2px blue solid;
+  border-radius: 5px;
+
+}
