@@ -6,6 +6,7 @@ import { CocktailContainerComponent } from './cocktail-container/cocktail-contai
 import { CocktailDetailsComponent } from './cocktail-container/cocktail-details/cocktail-details.component';
 import { CocktailListComponent } from './cocktail-container/cocktail-list/cocktail-list.component';
 import { HeaderComponent } from './header/header.component';
+import { SelectedDirective } from './shared/directives/selected.directive';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,10 @@ import { HeaderComponent } from './header/header.component';
     CocktailDetailsComponent,
     CocktailListComponent,
     CocktailContainerComponent,
+
   ],
+  providers: [SelectedDirective],
 })
-export class AppComponent {}
+export class AppComponent {
+  title: any;
+}
